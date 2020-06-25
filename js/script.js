@@ -26,6 +26,10 @@ $(document).ready(
             } else {
               $(quelloLi).addClass('green')
             }
+          },
+          // Imposto eventuale messaggio di errore
+          error: function (richiesta, stato, errori) {
+            alert("Attenzione! Si è verificato un errore.");
           }
         }
       )
